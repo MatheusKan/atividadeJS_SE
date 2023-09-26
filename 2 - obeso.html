@@ -20,11 +20,15 @@
         if (peso1 > peso2) {
             document.getElementById("nome").innerHTML = nome1;
             document.getElementById("peso").innerHTML = peso1+ " kgs";
-        } else {
+        } else if( peso1 < peso2) {
             document.getElementById("nome").innerHTML = nome2;
             document.getElementById("peso").innerHTML = peso2+ " kgs";
+        } else{
+            document.getElementById("nome").innerHTML = nome1 + " e " + nome2;
+            document.getElementById("peso").innerHTML = peso1 + " kgs"
         }
     </script>
+
 </body>
 
 </html>
