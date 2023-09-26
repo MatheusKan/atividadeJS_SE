@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diferença</title>
 </head>
+
 <body>
     <div id="Diferenca"></div>
-    <script> 
+    <script>
         let numero = Number(prompt("Digite o primeiro número: "));
         let numero2 = Number(prompt("Digite o segundo número: "));
-        let resultado = numero - numero2;
-        document.getElementById("Diferenca").innerHTML = numero + " - " + numero2 + " = " + resultado;
+        let resultado = 0
+        if (numero > numero2) {
+            resultado = numero - numero2;
+            document.getElementById("Diferenca").innerHTML = numero + " - " + numero2 + " = " + resultado;
+        }
+        else if (numero < numero2) {
+            resultado = numero2 - numero
+            document.getElementById("Diferenca").innerHTML = "A diferença entre " + numero + " e " + numero2 + " é " + resultado;
+        } else
+            document.getElementById("Diferenca").innerHTML = numero + " e " + numero2 + " são iguais"
+
+
     </script>
 
 </body>
+
 </html>
